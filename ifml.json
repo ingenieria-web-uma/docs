@@ -498,28 +498,6 @@
         },
         {
             "attributes": {
-                "name": "Búsqueda Avanzada",
-                "default": false,
-                "landmark": false,
-                "xor": false
-            },
-            "metadata": {
-                "graphics": {
-                    "position": {
-                        "x": -130,
-                        "y": 320
-                    },
-                    "size": {
-                        "height": 160,
-                        "width": 200
-                    }
-                }
-            },
-            "id": "cb1364f5-73d3-45a6-9a44-92f76ec4b182",
-            "type": "ifml.ViewContainer"
-        },
-        {
-            "attributes": {
                 "name": "Cuenta creada con Google (oauth)",
                 "parameters": [],
                 "results": []
@@ -713,25 +691,6 @@
         },
         {
             "attributes": {
-                "name": "actualizar"
-            },
-            "metadata": {
-                "graphics": {
-                    "position": {
-                        "x": 1260,
-                        "y": 680
-                    },
-                    "name": {
-                        "horizontal": "left-outer",
-                        "vertical": "top"
-                    }
-                }
-            },
-            "id": "2117270b-5ef8-4881-8965-e0386d899cc9",
-            "type": "ifml.Event"
-        },
-        {
-            "attributes": {
                 "name": "eliminar"
             },
             "metadata": {
@@ -796,53 +755,6 @@
         },
         {
             "attributes": {
-                "name": "Entrada",
-                "stereotype": "details",
-                "fields": [
-                    "descripción",
-                    "fecha",
-                    "html",
-                    "imagen",
-                    "nombre"
-                ],
-                "collection": "Entrada"
-            },
-            "metadata": {
-                "graphics": {
-                    "position": {
-                        "x": 960,
-                        "y": 590
-                    },
-                    "size": {
-                        "height": 60,
-                        "width": 150
-                    }
-                }
-            },
-            "id": "b6b18b05-2bb2-4b87-8089-af706821eb02",
-            "type": "ifml.ViewComponent"
-        },
-        {
-            "attributes": {
-                "name": "Editar"
-            },
-            "metadata": {
-                "graphics": {
-                    "position": {
-                        "x": 1130,
-                        "y": 570
-                    },
-                    "name": {
-                        "horizontal": "left-outer",
-                        "vertical": "top"
-                    }
-                }
-            },
-            "id": "b5ae6764-ad73-42d6-9058-a526e7ad5e6d",
-            "type": "ifml.Event"
-        },
-        {
-            "attributes": {
                 "name": "Ver historial"
             },
             "metadata": {
@@ -858,25 +770,6 @@
                 }
             },
             "id": "8bb450a6-018e-4445-9c70-2f6978bd302e",
-            "type": "ifml.Event"
-        },
-        {
-            "attributes": {
-                "name": "Comentar la entrada"
-            },
-            "metadata": {
-                "graphics": {
-                    "position": {
-                        "x": 930,
-                        "y": 600
-                    },
-                    "name": {
-                        "horizontal": "left-outer",
-                        "vertical": "top"
-                    }
-                }
-            },
-            "id": "fce39ecf-5a23-4fff-954e-54823c39870b",
             "type": "ifml.Event"
         },
         {
@@ -1066,13 +959,16 @@
                 "name": "Lista de wikis",
                 "stereotype": "list",
                 "fields": [
+                    "autor",
                     "descripción",
-                    "fecha",
-                    "imagen",
-                    "nombre"
+                    "editor",
+                    "fecha"
                 ],
                 "collection": "Wiki",
-                "filters": []
+                "filters": [
+                    "fecha",
+                    "nombre"
+                ]
             },
             "metadata": {
                 "graphics": {
@@ -1266,7 +1162,10 @@
                     "nombre"
                 ],
                 "collection": "Entrada",
-                "filters": []
+                "filters": [
+                    "fecha",
+                    "nombre"
+                ]
             },
             "metadata": {
                 "graphics": {
@@ -1458,32 +1357,6 @@
         },
         {
             "attributes": {
-                "name": "Crear wiki",
-                "stereotype": "form",
-                "fields": [
-                    "descripción",
-                    "fecha",
-                    "imagen",
-                    "nombre"
-                ]
-            },
-            "metadata": {
-                "graphics": {
-                    "position": {
-                        "x": 390,
-                        "y": -190
-                    },
-                    "size": {
-                        "height": 60,
-                        "width": 150
-                    }
-                }
-            },
-            "id": "40a6acec-d250-41cd-865f-c7ffdb4751f1",
-            "type": "ifml.ViewComponent"
-        },
-        {
-            "attributes": {
                 "name": "Crear"
             },
             "metadata": {
@@ -1522,14 +1395,14 @@
         },
         {
             "attributes": {
-                "name": "Autor",
+                "name": "Redactor",
                 "stereotype": "details",
                 "fields": [
                     "correo electrónico",
                     "nombre",
                     "reputación"
                 ],
-                "collection": "autores"
+                "collection": "redactores"
             },
             "metadata": {
                 "graphics": {
@@ -1586,32 +1459,6 @@
                 }
             },
             "id": "11947f32-a2e0-45bc-ba23-952a8fa70ec0",
-            "type": "ifml.ViewComponent"
-        },
-        {
-            "attributes": {
-                "name": "Búsqueda Avanzada",
-                "stereotype": "form",
-                "fields": [
-                    "autor",
-                    "editor",
-                    "fecha de creación",
-                    "palabras clave"
-                ]
-            },
-            "metadata": {
-                "graphics": {
-                    "position": {
-                        "x": -110,
-                        "y": 380
-                    },
-                    "size": {
-                        "height": 60,
-                        "width": 150
-                    }
-                }
-            },
-            "id": "207ab0a5-f443-498f-ab7d-bfa3b091545d",
             "type": "ifml.ViewComponent"
         },
         {
@@ -1920,25 +1767,6 @@
         },
         {
             "attributes": {
-                "name": "Editar"
-            },
-            "metadata": {
-                "graphics": {
-                    "position": {
-                        "x": 450,
-                        "y": 390
-                    },
-                    "name": {
-                        "horizontal": "left-outer",
-                        "vertical": "top"
-                    }
-                }
-            },
-            "id": "5412c489-5e92-49da-98ca-9145ca47cfd9",
-            "type": "ifml.Event"
-        },
-        {
-            "attributes": {
                 "name": "Borrar"
             },
             "metadata": {
@@ -2093,25 +1921,6 @@
         },
         {
             "attributes": {
-                "name": "Busqueda avanzada"
-            },
-            "metadata": {
-                "graphics": {
-                    "position": {
-                        "x": -120,
-                        "y": 40
-                    },
-                    "name": {
-                        "horizontal": "left-outer",
-                        "vertical": "bottom"
-                    }
-                }
-            },
-            "id": "d76e3fdc-f2e0-465d-a149-9c4d585e3aaf",
-            "type": "ifml.Event"
-        },
-        {
-            "attributes": {
                 "name": "Buscar"
             },
             "metadata": {
@@ -2150,25 +1959,6 @@
         },
         {
             "attributes": {
-                "name": "buscar"
-            },
-            "metadata": {
-                "graphics": {
-                    "position": {
-                        "x": 30,
-                        "y": 400
-                    },
-                    "name": {
-                        "horizontal": "left-outer",
-                        "vertical": "top"
-                    }
-                }
-            },
-            "id": "673dd03f-ef67-44b6-9d7a-a2ad7b6b3f76",
-            "type": "ifml.Event"
-        },
-        {
-            "attributes": {
                 "name": "selected",
                 "stereotype": "selection"
             },
@@ -2185,6 +1975,222 @@
                 }
             },
             "id": "25113a44-5f01-4015-8d00-d43ce860fe61",
+            "type": "ifml.Event"
+        },
+        {
+            "attributes": {
+                "name": "Crear wiki",
+                "stereotype": "form",
+                "fields": [
+                    "descripción",
+                    "fecha",
+                    "imagen",
+                    "nombre"
+                ]
+            },
+            "metadata": {
+                "graphics": {
+                    "position": {
+                        "x": 400,
+                        "y": -150
+                    },
+                    "size": {
+                        "height": 60,
+                        "width": 150
+                    }
+                }
+            },
+            "id": "40a6acec-d250-41cd-865f-c7ffdb4751f1",
+            "type": "ifml.ViewComponent"
+        },
+        {
+            "attributes": {
+                "name": "Editar"
+            },
+            "metadata": {
+                "graphics": {
+                    "position": {
+                        "x": 460,
+                        "y": 390
+                    },
+                    "name": {
+                        "horizontal": "left-outer",
+                        "vertical": "top"
+                    }
+                }
+            },
+            "id": "5412c489-5e92-49da-98ca-9145ca47cfd9",
+            "type": "ifml.Event"
+        },
+        {
+            "attributes": {
+                "name": "Comentar"
+            },
+            "metadata": {
+                "graphics": {
+                    "position": {
+                        "x": 930,
+                        "y": 600
+                    },
+                    "name": {
+                        "horizontal": "left-outer",
+                        "vertical": "top"
+                    }
+                }
+            },
+            "id": "fce39ecf-5a23-4fff-954e-54823c39870b",
+            "type": "ifml.Event"
+        },
+        {
+            "attributes": {
+                "name": "actualizar"
+            },
+            "metadata": {
+                "graphics": {
+                    "position": {
+                        "x": 1270,
+                        "y": 640
+                    },
+                    "name": {
+                        "horizontal": "left-outer",
+                        "vertical": "top"
+                    }
+                }
+            },
+            "id": "af45bef7-5c97-4194-9409-d6f26a73b3d3",
+            "type": "ifml.Event"
+        },
+        {
+            "attributes": {
+                "name": "Entrada",
+                "stereotype": "details",
+                "fields": [
+                    "descripción",
+                    "fecha",
+                    "html",
+                    "imagen",
+                    "nombre"
+                ],
+                "collection": "Entrada"
+            },
+            "metadata": {
+                "graphics": {
+                    "position": {
+                        "x": 960,
+                        "y": 590
+                    },
+                    "size": {
+                        "height": 60,
+                        "width": 150
+                    }
+                }
+            },
+            "id": "b6b18b05-2bb2-4b87-8089-af706821eb02",
+            "type": "ifml.ViewComponent"
+        },
+        {
+            "attributes": {
+                "name": "Editar"
+            },
+            "metadata": {
+                "graphics": {
+                    "position": {
+                        "x": 1100,
+                        "y": 610
+                    },
+                    "name": {
+                        "horizontal": "left-outer",
+                        "vertical": "top"
+                    }
+                }
+            },
+            "id": "fae74bdd-a6e2-4fa5-a7bd-e46b8cb908c5",
+            "type": "ifml.Event"
+        },
+        {
+            "attributes": {
+                "name": "Búsqueda Avanzada",
+                "default": false,
+                "landmark": false,
+                "xor": false
+            },
+            "metadata": {
+                "graphics": {
+                    "position": {
+                        "x": 690,
+                        "y": -70
+                    },
+                    "size": {
+                        "height": 160,
+                        "width": 200
+                    }
+                }
+            },
+            "id": "cb1364f5-73d3-45a6-9a44-92f76ec4b182",
+            "type": "ifml.ViewContainer"
+        },
+        {
+            "attributes": {
+                "name": "Búsqueda Avanzada",
+                "stereotype": "form",
+                "fields": [
+                    "autor",
+                    "editor",
+                    "fecha de creación",
+                    "palabras clave"
+                ]
+            },
+            "metadata": {
+                "graphics": {
+                    "position": {
+                        "x": 710,
+                        "y": -10
+                    },
+                    "size": {
+                        "height": 60,
+                        "width": 150
+                    }
+                }
+            },
+            "id": "207ab0a5-f443-498f-ab7d-bfa3b091545d",
+            "type": "ifml.ViewComponent"
+        },
+        {
+            "attributes": {
+                "name": "buscar"
+            },
+            "metadata": {
+                "graphics": {
+                    "position": {
+                        "x": 760,
+                        "y": 40
+                    },
+                    "name": {
+                        "horizontal": "left-outer",
+                        "vertical": "top"
+                    }
+                }
+            },
+            "id": "673dd03f-ef67-44b6-9d7a-a2ad7b6b3f76",
+            "type": "ifml.Event"
+        },
+        {
+            "attributes": {
+                "name": "Busqueda avanzada"
+            },
+            "metadata": {
+                "graphics": {
+                    "position": {
+                        "x": 970,
+                        "y": 120
+                    },
+                    "name": {
+                        "horizontal": "left-outer",
+                        "vertical": "top"
+                    }
+                }
+            },
+            "id": "e0cad10d-40ee-4ed9-ac7a-276799a20727",
             "type": "ifml.Event"
         },
         {
@@ -2320,7 +2326,12 @@
         },
         {
             "attributes": {
-                "bindings": []
+                "bindings": [
+                    {
+                        "input": "búsqueda",
+                        "output": "búsqueda"
+                    }
+                ]
             },
             "metadata": {
                 "graphics": {
@@ -2340,26 +2351,6 @@
                 "bindings": []
             },
             "metadata": {
-                "graphics": {}
-            },
-            "id": "202700a5-4974-4dc0-8b44-fb5938a83d45",
-            "type": "ifml.NavigationFlow"
-        },
-        {
-            "attributes": {
-                "bindings": []
-            },
-            "metadata": {
-                "graphics": {}
-            },
-            "id": "253ee451-f8fd-4d44-9146-174fdda0db97",
-            "type": "ifml.NavigationFlow"
-        },
-        {
-            "attributes": {
-                "bindings": []
-            },
-            "metadata": {
                 "graphics": {
                     "vertices": []
                 }
@@ -2369,10 +2360,17 @@
         },
         {
             "attributes": {
-                "bindings": []
+                "bindings": [
+                    {
+                        "input": "nombre",
+                        "output": "búsqueda"
+                    }
+                ]
             },
             "metadata": {
-                "graphics": {}
+                "graphics": {
+                    "vertices": []
+                }
             },
             "id": "2a328ce9-155e-4f17-9405-1a78f8e31c0f",
             "type": "ifml.NavigationFlow"
@@ -2396,28 +2394,12 @@
         },
         {
             "attributes": {
-                "bindings": []
-            },
-            "metadata": {
-                "graphics": {
-                    "vertices": [
-                        {
-                            "x": 840,
-                            "y": 610
-                        },
-                        {
-                            "x": 840,
-                            "y": 970
-                        }
-                    ]
-                }
-            },
-            "id": "31e6a8f6-0d72-4c70-8020-7070aea6817d",
-            "type": "ifml.NavigationFlow"
-        },
-        {
-            "attributes": {
-                "bindings": []
+                "bindings": [
+                    {
+                        "input": "id",
+                        "output": "id"
+                    }
+                ]
             },
             "metadata": {
                 "graphics": {}
@@ -2440,16 +2422,6 @@
                 }
             },
             "id": "43335be2-b0df-4252-b7d2-320a4b1535c7",
-            "type": "ifml.NavigationFlow"
-        },
-        {
-            "attributes": {
-                "bindings": []
-            },
-            "metadata": {
-                "graphics": {}
-            },
-            "id": "469edf21-76ef-42b3-b407-1f228c8c5ba8",
             "type": "ifml.NavigationFlow"
         },
         {
@@ -2689,12 +2661,7 @@
             },
             "metadata": {
                 "graphics": {
-                    "vertices": [
-                        {
-                            "x": -1000,
-                            "y": 250
-                        }
-                    ]
+                    "vertices": []
                 }
             },
             "id": "939068e0-856e-447f-bbef-abdaa2dc1fb1",
@@ -2702,14 +2669,19 @@
         },
         {
             "attributes": {
-                "bindings": []
+                "bindings": [
+                    {
+                        "input": "id",
+                        "output": "id"
+                    }
+                ]
             },
             "metadata": {
                 "graphics": {
                     "vertices": [
                         {
                             "x": 1200,
-                            "y": 550
+                            "y": 600
                         }
                     ]
                 }
@@ -2893,11 +2865,11 @@
                     "vertices": [
                         {
                             "x": 1520,
-                            "y": 330
+                            "y": 360
                         },
                         {
                             "x": 1050,
-                            "y": 330
+                            "y": 360
                         }
                     ]
                 }
@@ -2924,14 +2896,23 @@
         },
         {
             "attributes": {
-                "bindings": []
+                "bindings": [
+                    {
+                        "input": "nombre",
+                        "output": "palabras clave"
+                    },
+                    {
+                        "input": "fecha",
+                        "output": "fecha de creación"
+                    }
+                ]
             },
             "metadata": {
                 "graphics": {
                     "vertices": [
                         {
-                            "x": 280,
-                            "y": 410
+                            "x": 770,
+                            "y": 250
                         }
                     ]
                 }
@@ -2941,7 +2922,16 @@
         },
         {
             "attributes": {
-                "bindings": []
+                "bindings": [
+                    {
+                        "input": "descripción",
+                        "output": "descripción"
+                    },
+                    {
+                        "input": "fecha",
+                        "output": "fecha"
+                    }
+                ]
             },
             "metadata": {
                 "graphics": {
@@ -3050,6 +3040,85 @@
             },
             "id": "f3e23723-c3a1-4bcf-9746-b3d9bdc2b5ee",
             "type": "ifml.NavigationFlow"
+        },
+        {
+            "attributes": {
+                "bindings": [
+                    {
+                        "input": "nombre",
+                        "output": "nombre"
+                    },
+                    {
+                        "input": "descripción",
+                        "output": "descripción"
+                    },
+                    {
+                        "input": "fecha",
+                        "output": "fecha"
+                    },
+                    {
+                        "input": "html",
+                        "output": "html"
+                    },
+                    {
+                        "input": "imagen",
+                        "output": "imagen"
+                    }
+                ]
+            },
+            "metadata": {
+                "graphics": {}
+            },
+            "id": "152a28da-d8ab-4180-801a-114017c80ae8",
+            "type": "ifml.NavigationFlow"
+        },
+        {
+            "attributes": {
+                "bindings": []
+            },
+            "metadata": {
+                "graphics": {
+                    "vertices": [
+                        {
+                            "x": 840,
+                            "y": 610
+                        },
+                        {
+                            "x": 840,
+                            "y": 1000
+                        }
+                    ]
+                }
+            },
+            "id": "31e6a8f6-0d72-4c70-8020-7070aea6817d",
+            "type": "ifml.NavigationFlow"
+        },
+        {
+            "attributes": {
+                "bindings": []
+            },
+            "metadata": {
+                "graphics": {}
+            },
+            "id": "65210a09-b8be-4e6e-a651-71860cdf4988",
+            "type": "ifml.NavigationFlow"
+        },
+        {
+            "attributes": {
+                "bindings": []
+            },
+            "metadata": {
+                "graphics": {
+                    "vertices": [
+                        {
+                            "x": 980,
+                            "y": 10
+                        }
+                    ]
+                }
+            },
+            "id": "8780e576-c2c5-4ec0-ae23-7e2c96fe7012",
+            "type": "ifml.NavigationFlow"
         }
     ],
     "relations": [
@@ -3071,11 +3140,6 @@
         {
             "type": "hierarchy",
             "parent": "072bb547-e45f-4762-b7ab-17e122b698ec",
-            "child": "2117270b-5ef8-4881-8965-e0386d899cc9"
-        },
-        {
-            "type": "hierarchy",
-            "parent": "072bb547-e45f-4762-b7ab-17e122b698ec",
             "child": "ea520346-003b-42a5-9b58-3275905d115b"
         },
         {
@@ -3091,22 +3155,7 @@
         {
             "type": "hierarchy",
             "parent": "0d07345b-caf5-4012-a90f-b0a84a1a0665",
-            "child": "b6b18b05-2bb2-4b87-8089-af706821eb02"
-        },
-        {
-            "type": "hierarchy",
-            "parent": "0d07345b-caf5-4012-a90f-b0a84a1a0665",
-            "child": "b5ae6764-ad73-42d6-9058-a526e7ad5e6d"
-        },
-        {
-            "type": "hierarchy",
-            "parent": "0d07345b-caf5-4012-a90f-b0a84a1a0665",
             "child": "8bb450a6-018e-4445-9c70-2f6978bd302e"
-        },
-        {
-            "type": "hierarchy",
-            "parent": "0d07345b-caf5-4012-a90f-b0a84a1a0665",
-            "child": "fce39ecf-5a23-4fff-954e-54823c39870b"
         },
         {
             "type": "hierarchy",
@@ -3246,11 +3295,6 @@
         {
             "type": "hierarchy",
             "parent": "bcb65f5a-cf36-4582-ba9b-c8d0886a6273",
-            "child": "40a6acec-d250-41cd-865f-c7ffdb4751f1"
-        },
-        {
-            "type": "hierarchy",
-            "parent": "bcb65f5a-cf36-4582-ba9b-c8d0886a6273",
             "child": "a140e59a-c9db-4e7c-8ed6-d91246d67c5f"
         },
         {
@@ -3272,11 +3316,6 @@
             "type": "hierarchy",
             "parent": "c5556da8-2c4b-45b0-9fe5-e9088987c812",
             "child": "11947f32-a2e0-45bc-ba23-952a8fa70ec0"
-        },
-        {
-            "type": "hierarchy",
-            "parent": "cb1364f5-73d3-45a6-9a44-92f76ec4b182",
-            "child": "207ab0a5-f443-498f-ab7d-bfa3b091545d"
         },
         {
             "type": "hierarchy",
@@ -3356,11 +3395,6 @@
         {
             "type": "hierarchy",
             "parent": "componentelistabusqueda",
-            "child": "5412c489-5e92-49da-98ca-9145ca47cfd9"
-        },
-        {
-            "type": "hierarchy",
-            "parent": "componentelistabusqueda",
             "child": "0021d27b-07a4-42ff-aeb2-efe3a5cbc7e5"
         },
         {
@@ -3401,11 +3435,6 @@
         {
             "type": "hierarchy",
             "parent": "componenteformbusqueda",
-            "child": "d76e3fdc-f2e0-465d-a149-9c4d585e3aaf"
-        },
-        {
-            "type": "hierarchy",
-            "parent": "componenteformbusqueda",
             "child": "c0d6f564-760b-4a4f-af21-4daad30be4b7"
         },
         {
@@ -3415,13 +3444,53 @@
         },
         {
             "type": "hierarchy",
+            "parent": "5935a675-bc04-4b9c-b462-2133c05e164d",
+            "child": "25113a44-5f01-4015-8d00-d43ce860fe61"
+        },
+        {
+            "type": "hierarchy",
+            "parent": "bcb65f5a-cf36-4582-ba9b-c8d0886a6273",
+            "child": "40a6acec-d250-41cd-865f-c7ffdb4751f1"
+        },
+        {
+            "type": "hierarchy",
+            "parent": "componentelistabusqueda",
+            "child": "5412c489-5e92-49da-98ca-9145ca47cfd9"
+        },
+        {
+            "type": "hierarchy",
+            "parent": "0d07345b-caf5-4012-a90f-b0a84a1a0665",
+            "child": "fce39ecf-5a23-4fff-954e-54823c39870b"
+        },
+        {
+            "type": "hierarchy",
+            "parent": "ebd3caab-ee60-4c69-9cfe-31a09a181cef",
+            "child": "af45bef7-5c97-4194-9409-d6f26a73b3d3"
+        },
+        {
+            "type": "hierarchy",
+            "parent": "0d07345b-caf5-4012-a90f-b0a84a1a0665",
+            "child": "b6b18b05-2bb2-4b87-8089-af706821eb02"
+        },
+        {
+            "type": "hierarchy",
+            "parent": "b6b18b05-2bb2-4b87-8089-af706821eb02",
+            "child": "fae74bdd-a6e2-4fa5-a7bd-e46b8cb908c5"
+        },
+        {
+            "type": "hierarchy",
+            "parent": "cb1364f5-73d3-45a6-9a44-92f76ec4b182",
+            "child": "207ab0a5-f443-498f-ab7d-bfa3b091545d"
+        },
+        {
+            "type": "hierarchy",
             "parent": "207ab0a5-f443-498f-ab7d-bfa3b091545d",
             "child": "673dd03f-ef67-44b6-9d7a-a2ad7b6b3f76"
         },
         {
             "type": "hierarchy",
-            "parent": "5935a675-bc04-4b9c-b462-2133c05e164d",
-            "child": "25113a44-5f01-4015-8d00-d43ce860fe61"
+            "parent": "2d4575e6-8f7d-46a0-917a-b8cfc150340c",
+            "child": "e0cad10d-40ee-4ed9-ac7a-276799a20727"
         },
         {
             "type": "source",
@@ -3470,16 +3539,6 @@
         },
         {
             "type": "source",
-            "flow": "202700a5-4974-4dc0-8b44-fb5938a83d45",
-            "source": "2117270b-5ef8-4881-8965-e0386d899cc9"
-        },
-        {
-            "type": "source",
-            "flow": "253ee451-f8fd-4d44-9146-174fdda0db97",
-            "source": "b5ae6764-ad73-42d6-9058-a526e7ad5e6d"
-        },
-        {
-            "type": "source",
             "flow": "27df69e0-66e1-4a4a-aa2d-e16ea1f9d1b3",
             "source": "73fc219b-4543-410b-8152-1b19b3328baa"
         },
@@ -3495,11 +3554,6 @@
         },
         {
             "type": "source",
-            "flow": "31e6a8f6-0d72-4c70-8020-7070aea6817d",
-            "source": "fce39ecf-5a23-4fff-954e-54823c39870b"
-        },
-        {
-            "type": "source",
             "flow": "3c65da9a-2a5d-440b-bc3a-1c4635c20fa1",
             "source": "fa843d4f-4dee-48e1-9400-1bd85784cb8f"
         },
@@ -3507,11 +3561,6 @@
             "type": "source",
             "flow": "43335be2-b0df-4252-b7d2-320a4b1535c7",
             "source": "9887b4c0-1390-4f14-b79c-e5dd95eca501"
-        },
-        {
-            "type": "source",
-            "flow": "469edf21-76ef-42b3-b407-1f228c8c5ba8",
-            "source": "d76e3fdc-f2e0-465d-a149-9c4d585e3aaf"
         },
         {
             "type": "source",
@@ -3689,6 +3738,26 @@
             "source": "ff2ee7f8-7d35-4a01-a716-1fe462b0d571"
         },
         {
+            "type": "source",
+            "flow": "152a28da-d8ab-4180-801a-114017c80ae8",
+            "source": "fae74bdd-a6e2-4fa5-a7bd-e46b8cb908c5"
+        },
+        {
+            "type": "source",
+            "flow": "31e6a8f6-0d72-4c70-8020-7070aea6817d",
+            "source": "fce39ecf-5a23-4fff-954e-54823c39870b"
+        },
+        {
+            "type": "source",
+            "flow": "65210a09-b8be-4e6e-a651-71860cdf4988",
+            "source": "af45bef7-5c97-4194-9409-d6f26a73b3d3"
+        },
+        {
+            "type": "source",
+            "flow": "8780e576-c2c5-4ec0-ae23-7e2c96fe7012",
+            "source": "e0cad10d-40ee-4ed9-ac7a-276799a20727"
+        },
+        {
             "type": "target",
             "flow": "05362fdb-3d5e-4c08-bd97-b81fc1035940",
             "target": "34e3a90e-040a-455c-8fe7-dbafaf6330fd"
@@ -3731,17 +3800,7 @@
         {
             "type": "target",
             "flow": "1900b0c2-474d-4a36-877e-f8b2ef27a8dd",
-            "target": "47f39a25-b28c-4f70-bb08-a5ed32d027f5"
-        },
-        {
-            "type": "target",
-            "flow": "202700a5-4974-4dc0-8b44-fb5938a83d45",
-            "target": "44657590-89ce-475c-9cbe-f35a1e792df0"
-        },
-        {
-            "type": "target",
-            "flow": "253ee451-f8fd-4d44-9146-174fdda0db97",
-            "target": "072bb547-e45f-4762-b7ab-17e122b698ec"
+            "target": "06cee925-5589-45a9-9ebf-741888a8dec7"
         },
         {
             "type": "target",
@@ -3760,23 +3819,13 @@
         },
         {
             "type": "target",
-            "flow": "31e6a8f6-0d72-4c70-8020-7070aea6817d",
-            "target": "689419b9-5047-4c78-9299-427b76c51028"
-        },
-        {
-            "type": "target",
             "flow": "3c65da9a-2a5d-440b-bc3a-1c4635c20fa1",
-            "target": "0d07345b-caf5-4012-a90f-b0a84a1a0665"
+            "target": "b6b18b05-2bb2-4b87-8089-af706821eb02"
         },
         {
             "type": "target",
             "flow": "43335be2-b0df-4252-b7d2-320a4b1535c7",
             "target": "702526c0-ecb6-4548-aea7-2ad53f7de2df"
-        },
-        {
-            "type": "target",
-            "flow": "469edf21-76ef-42b3-b407-1f228c8c5ba8",
-            "target": "cb1364f5-73d3-45a6-9a44-92f76ec4b182"
         },
         {
             "type": "target",
@@ -3846,7 +3895,7 @@
         {
             "type": "target",
             "flow": "9a46db87-6278-46e5-82aa-0d0ae75b3146",
-            "target": "0d07345b-caf5-4012-a90f-b0a84a1a0665"
+            "target": "b6b18b05-2bb2-4b87-8089-af706821eb02"
         },
         {
             "type": "target",
@@ -3916,12 +3965,12 @@
         {
             "type": "target",
             "flow": "d1a18a14-ca6d-4ce6-9d7a-4fc5b93944b2",
-            "target": "47f39a25-b28c-4f70-bb08-a5ed32d027f5"
+            "target": "60d8f224-2aa2-4137-8283-a3b8e7b103d1"
         },
         {
             "type": "target",
             "flow": "e0f41410-e9d4-42f4-86e0-2cd62df15768",
-            "target": "cda47c86-c327-4eb6-8b1b-628791d556f6"
+            "target": "88aeb218-c9b0-4d94-8e81-0cba808fc3db"
         },
         {
             "type": "target",
@@ -3952,12 +4001,32 @@
             "type": "target",
             "flow": "f3e23723-c3a1-4bcf-9746-b3d9bdc2b5ee",
             "target": "47f39a25-b28c-4f70-bb08-a5ed32d027f5"
+        },
+        {
+            "type": "target",
+            "flow": "152a28da-d8ab-4180-801a-114017c80ae8",
+            "target": "ebd3caab-ee60-4c69-9cfe-31a09a181cef"
+        },
+        {
+            "type": "target",
+            "flow": "31e6a8f6-0d72-4c70-8020-7070aea6817d",
+            "target": "689419b9-5047-4c78-9299-427b76c51028"
+        },
+        {
+            "type": "target",
+            "flow": "65210a09-b8be-4e6e-a651-71860cdf4988",
+            "target": "44657590-89ce-475c-9cbe-f35a1e792df0"
+        },
+        {
+            "type": "target",
+            "flow": "8780e576-c2c5-4ec0-ae23-7e2c96fe7012",
+            "target": "cb1364f5-73d3-45a6-9a44-92f76ec4b182"
         }
     ],
     "statistics": {
         "session": {
             "started_at": "2024-10-12T15:54:32.261Z",
-            "ended_at": "2024-10-12T15:57:27.957Z"
+            "ended_at": "2024-10-12T16:55:56.802Z"
         }
     }
 }
