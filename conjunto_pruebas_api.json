@@ -1,47 +1,41 @@
 {
-	"id": "10a0d922-6ecd-40c6-b6ad-cf683f7f5f02",
-	"name": "API documentation",
-	"timestamp": "2024-11-09T15:55:34.500Z",
+	"id": "7ea0bb3c-89d1-4edf-9542-32aeb4e53cb7",
+	"name": "LaWiki API documentation",
+	"timestamp": "2024-11-10T10:12:01.166Z",
 	"collection_id": "19329901-b7af5186-9c59-4d15-b2ea-e69f103a1a11",
 	"folder_id": 0,
 	"environment_id": "0",
-	"totalPass": 44,
+	"totalPass": 56,
 	"delay": 0,
 	"persist": true,
 	"status": "finished",
-	"startedAt": "2024-11-09T15:55:31.943Z",
+	"startedAt": "2024-11-10T10:11:56.180Z",
 	"totalFail": 0,
 	"results": [
 		{
 			"id": "b69740ae-4dcf-4846-8b5a-c8ffe7e72747",
 			"name": "/wikis",
 			"url": "http://localhost:5000/wikis",
-			"time": 94,
+			"time": 116,
 			"responseCode": {
 				"code": 201,
 				"name": "CREATED"
 			},
 			"tests": {
-				"Response status code is 201": true,
-				"Response time is within an acceptable range": true
+				"Response status code is 201": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 201": {
 					"pass": 1,
 					"fail": 0
-				},
-				"Response time is within an acceptable range": {
-					"pass": 1,
-					"fail": 0
 				}
 			},
 			"times": [
-				94
+				116
 			],
 			"allTests": [
 				{
-					"Response status code is 201": true,
-					"Response time is within an acceptable range": true
+					"Response status code is 201": true
 				}
 			]
 		},
@@ -49,7 +43,7 @@
 			"id": "6241dd6c-9d3c-4803-9ab8-d3566311389a",
 			"name": "/wikis",
 			"url": "http://localhost:5000/wikis",
-			"time": 48,
+			"time": 68,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -84,7 +78,7 @@
 				}
 			},
 			"times": [
-				48
+				68
 			],
 			"allTests": [
 				{
@@ -99,8 +93,8 @@
 		{
 			"id": "3da83d52-7803-4dd8-abd9-55348b3a1fc6",
 			"name": "/wikis?nombre",
-			"url": "http://localhost:5000/wikis?nombre=Wiki_3991",
-			"time": 47,
+			"url": "http://localhost:5000/wikis?nombre=Wiki_6499",
+			"time": 59,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -140,7 +134,7 @@
 				}
 			},
 			"times": [
-				47
+				59
 			],
 			"allTests": [
 				{
@@ -156,23 +150,18 @@
 		{
 			"id": "bb4d8435-2c98-4aa4-a6ef-78548e1e6655",
 			"name": "/wikis/<id>",
-			"url": "http://localhost:5000/wikis/672f85f4f94b7db9552e40ba",
-			"time": 49,
+			"url": "http://localhost:5000/wikis/673086ed37e98ad8c1c2b3ef",
+			"time": 53,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Response status code is 200": true,
-				"Response time is less than 200ms": true,
 				"Response body has the expected fields and data types": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Response time is less than 200ms": {
 					"pass": 1,
 					"fail": 0
 				},
@@ -182,12 +171,11 @@
 				}
 			},
 			"times": [
-				49
+				53
 			],
 			"allTests": [
 				{
 					"Response status code is 200": true,
-					"Response time is less than 200ms": true,
 					"Response body has the expected fields and data types": true
 				}
 			]
@@ -195,8 +183,8 @@
 		{
 			"id": "9cccff73-ccfc-4445-86c7-b643cdb16f76",
 			"name": "/wikis/<id>",
-			"url": "http://localhost:5000/wikis/672f85f4f94b7db9552e40ba",
-			"time": 56,
+			"url": "http://localhost:5000/wikis/673086ed37e98ad8c1c2b3ef",
+			"time": 55,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -216,7 +204,7 @@
 				}
 			},
 			"times": [
-				56
+				55
 			],
 			"allTests": [
 				{
@@ -229,32 +217,26 @@
 			"id": "1640c56e-8a78-42f8-8232-9d3fda378238",
 			"name": "/entradas",
 			"url": "http://localhost:5001/entradas",
-			"time": 83,
+			"time": 101,
 			"responseCode": {
 				"code": 201,
 				"name": "CREATED"
 			},
 			"tests": {
-				"Response status code is 201": true,
-				"Response time is within an acceptable range": true
+				"Response status code is 201": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 201": {
 					"pass": 1,
 					"fail": 0
-				},
-				"Response time is within an acceptable range": {
-					"pass": 1,
-					"fail": 0
 				}
 			},
 			"times": [
-				83
+				101
 			],
 			"allTests": [
 				{
-					"Response status code is 201": true,
-					"Response time is within an acceptable range": true
+					"Response status code is 201": true
 				}
 			]
 		},
@@ -262,22 +244,17 @@
 			"id": "42900956-da7d-42b6-aaa2-01675069b6c9",
 			"name": "/entradas",
 			"url": "http://localhost:5001/entradas",
-			"time": 45,
+			"time": 55,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Status code is 200": true,
-				"Response time is less than 200ms": true,
 				"Validate the response schema for expected fields and data types": true
 			},
 			"testPassFailCounts": {
 				"Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Response time is less than 200ms": {
 					"pass": 1,
 					"fail": 0
 				},
@@ -287,12 +264,11 @@
 				}
 			},
 			"times": [
-				45
+				55
 			],
 			"allTests": [
 				{
 					"Status code is 200": true,
-					"Response time is less than 200ms": true,
 					"Validate the response schema for expected fields and data types": true
 				}
 			]
@@ -300,24 +276,19 @@
 		{
 			"id": "223e7569-4124-4c69-99c1-7ad60c803ef7",
 			"name": "/entradas?nombre&idWiki",
-			"url": "http://localhost:5001/entradas?nombre=Entrada_7026&idWiki=672f85f4f94b7db9552e40ba",
-			"time": 47,
+			"url": "http://localhost:5001/entradas?nombre=Entrada_4373&idWiki=673086ed37e98ad8c1c2b3ef",
+			"time": 56,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Response status code is 200": true,
-				"Response time is less than 200ms": true,
 				"Validate the response schema for the required fields and data types": true,
 				"Store entry ID": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Response time is less than 200ms": {
 					"pass": 1,
 					"fail": 0
 				},
@@ -331,12 +302,11 @@
 				}
 			},
 			"times": [
-				47
+				56
 			],
 			"allTests": [
 				{
 					"Response status code is 200": true,
-					"Response time is less than 200ms": true,
 					"Validate the response schema for the required fields and data types": true,
 					"Store entry ID": true
 				}
@@ -345,23 +315,18 @@
 		{
 			"id": "ff0689e3-e6c2-4cb0-a4b0-961b54c00c85",
 			"name": "/entradas/<id>",
-			"url": "http://localhost:5001/entradas/672f85f58dae77a4cac7835c",
-			"time": 46,
+			"url": "http://localhost:5001/entradas/673086ed412f6b6bdfa34f8b",
+			"time": 52,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Response status code is 200": true,
-				"Response time is less than 500ms": true,
 				"Response schema contains required fields and data types": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Response time is less than 500ms": {
 					"pass": 1,
 					"fail": 0
 				},
@@ -371,36 +336,30 @@
 				}
 			},
 			"times": [
-				46
+				52
 			],
 			"allTests": [
 				{
 					"Response status code is 200": true,
-					"Response time is less than 500ms": true,
 					"Response schema contains required fields and data types": true
 				}
 			]
 		},
 		{
 			"id": "ff09d821-58ab-429a-8273-85aaa38340c1",
-			"name": "/entradas/<id>/wikis",
-			"url": "http://localhost:5001/entradas/672f85f58dae77a4cac7835c/wikis",
-			"time": 83,
+			"name": "/entradas/<id>/wiki",
+			"url": "http://localhost:5001/entradas/673086ed412f6b6bdfa34f8b/wiki",
+			"time": 103,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Response status code is 200": true,
-				"Response time is less than 500ms": true,
 				"Response schema has the expected structure and data types": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Response time is less than 500ms": {
 					"pass": 1,
 					"fail": 0
 				},
@@ -410,12 +369,11 @@
 				}
 			},
 			"times": [
-				83
+				103
 			],
 			"allTests": [
 				{
 					"Response status code is 200": true,
-					"Response time is less than 500ms": true,
 					"Response schema has the expected structure and data types": true
 				}
 			]
@@ -423,56 +381,45 @@
 		{
 			"id": "f1e552b3-507c-49c9-b8ae-9177b2cdd23f",
 			"name": "/entradas/<id>",
-			"url": "http://localhost:5001/entradas/672f85f58dae77a4cac7835c",
-			"time": 82,
+			"url": "http://localhost:5001/entradas/673086ed412f6b6bdfa34f8b",
+			"time": 96,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
-				"Response status code is 200": true,
-				"Response time is in an acceptable range": true
+				"Response status code is 200": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
 					"pass": 1,
 					"fail": 0
-				},
-				"Response time is in an acceptable range": {
-					"pass": 1,
-					"fail": 0
 				}
 			},
 			"times": [
-				82
+				96
 			],
 			"allTests": [
 				{
-					"Response status code is 200": true,
-					"Response time is in an acceptable range": true
+					"Response status code is 200": true
 				}
 			]
 		},
 		{
 			"id": "b5cf3238-31b6-4665-b103-630d489b08c5",
 			"name": "/wikis/<id>/entradas",
-			"url": "http://localhost:5000/wikis/672f85f4f94b7db9552e40ba/entradas",
-			"time": 54,
+			"url": "http://localhost:5000/wikis/673086ed37e98ad8c1c2b3ef/entradas",
+			"time": 99,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Response status code is 200": true,
-				"Response time is less than 500ms": true,
 				"Response has the required fields and schema": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
-					"pass": 1,
-					"fail": 0
-				},
-				"Response time is less than 500ms": {
 					"pass": 1,
 					"fail": 0
 				},
@@ -482,53 +429,250 @@
 				}
 			},
 			"times": [
-				54
+				99
 			],
 			"allTests": [
 				{
 					"Response status code is 200": true,
-					"Response time is less than 500ms": true,
 					"Response has the required fields and schema": true
 				}
 			]
 		},
 		{
-			"id": "9f78d399-cf33-4d34-8351-0d8551e36400",
-			"name": "/entradas/<id>",
-			"url": "http://localhost:5001/entradas/672f85f58dae77a4cac7835c",
-			"time": 94,
+			"id": "a3639a43-1405-4b1f-8a7c-e652902e8fbf",
+			"name": "/comentarios",
+			"url": "http://localhost:5002/comentarios",
+			"time": 93,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Response status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				93
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "a9b0e220-ed11-48c3-b883-f073e1784022",
+			"name": "/comentarios",
+			"url": "http://localhost:5002/comentarios",
+			"time": 62,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Response status code is 200": true,
-				"Response time is less than 500ms": true
+				"Response has the required fields": true,
+				"Content-Type is application/json": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
 					"pass": 1,
 					"fail": 0
 				},
-				"Response time is less than 500ms": {
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
 					"pass": 1,
 					"fail": 0
 				}
 			},
 			"times": [
-				94
+				62
 			],
 			"allTests": [
 				{
 					"Response status code is 200": true,
-					"Response time is less than 500ms": true
+					"Response has the required fields": true,
+					"Content-Type is application/json": true
 				}
 			]
 		},
 		{
-			"id": "9c517e56-42c8-41f7-9d15-766805897337",
-			"name": "/entradas (by idWiki)",
-			"url": "http://localhost:5001/entradas",
+			"id": "561f4f1c-ae4d-40f2-90d7-296d60b51e40",
+			"name": "/comentarios?contenido&idEntrada",
+			"url": "http://localhost:5002/comentarios?contenido=Comentario_2543&idEntrada=673086ed412f6b6bdfa34f8b",
+			"time": 47,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Validate the response schema for the fields": true,
+				"Store comment ID": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the response schema for the fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Store comment ID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				47
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Validate the response schema for the fields": true,
+					"Store comment ID": true
+				}
+			]
+		},
+		{
+			"id": "6b43b478-7af9-4b53-ae98-eb78e31a3ecf",
+			"name": "/comentarios/<id>",
+			"url": "http://localhost:5002/comentarios/673086ef570e8f176c3fe5dd",
+			"time": 59,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				59
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d13497c0-ec37-451e-9bfd-73a431d145b1",
+			"name": "/entradas/<id>/comentarios",
+			"url": "http://localhost:5001/entradas/673086ed412f6b6bdfa34f8b/comentarios",
+			"time": 95,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Validate the response schema for the fields": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the response schema for the fields": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				95
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Validate the response schema for the fields": true
+				}
+			]
+		},
+		{
+			"id": "d9157d13-2a2c-4a99-bc4d-639a07208091",
+			"name": "/versiones",
+			"url": "http://localhost:5001/versiones",
+			"time": 56,
+			"responseCode": {
+				"code": 201,
+				"name": "CREATED"
+			},
+			"tests": {
+				"Response status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				56
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "c1125b51-e3c2-4d24-a35d-79e76574749f",
+			"name": "/versiones",
+			"url": "http://localhost:5001/versiones/",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response has the required fields": true,
+				"Content-Type is application/json": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response has the required fields": true,
+					"Content-Type is application/json": true
+				}
+			]
+		},
+		{
+			"id": "01c4c254-a1bf-4e75-aace-13fc47fd45fe",
+			"name": "/versiones?contenido&idEntrada",
+			"url": "http://localhost:5001/versiones?contenido=Entrada_9580&idEntrada=673086ed412f6b6bdfa34f8b",
 			"time": 46,
 			"responseCode": {
 				"code": 200,
@@ -536,14 +680,19 @@
 			},
 			"tests": {
 				"Response status code is 200": true,
-				"Response time is less than 200ms": true
+				"Validate the response schema for the required fields and data types": true,
+				"Store entry ID": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
 					"pass": 1,
 					"fail": 0
 				},
-				"Response time is less than 200ms": {
+				"Validate the response schema for the required fields and data types": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Store entry ID": {
 					"pass": 1,
 					"fail": 0
 				}
@@ -554,46 +703,263 @@
 			"allTests": [
 				{
 					"Response status code is 200": true,
-					"Response time is less than 200ms": true
+					"Validate the response schema for the required fields and data types": true,
+					"Store entry ID": true
 				}
 			]
 		},
 		{
-			"id": "c33d923b-1a6a-4906-a999-bd8c5c8b586e",
-			"name": "/wikis/<id>",
-			"url": "http://localhost:5000/wikis/672f85f4f94b7db9552e40ba",
-			"time": 142,
+			"id": "25827e27-64da-44e5-b5b2-b80881756a4c",
+			"name": "/versiones/<id>",
+			"url": "http://localhost:5001/versiones/673086ef412f6b6bdfa34f8c",
+			"time": 44,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
 			},
 			"tests": {
 				"Response status code is 200": true,
-				"Response time is within an acceptable range": true
+				"Validate the response schema": true
 			},
 			"testPassFailCounts": {
 				"Response status code is 200": {
 					"pass": 1,
 					"fail": 0
 				},
-				"Response time is within an acceptable range": {
+				"Validate the response schema": {
 					"pass": 1,
 					"fail": 0
 				}
 			},
 			"times": [
-				142
+				44
 			],
 			"allTests": [
 				{
 					"Response status code is 200": true,
-					"Response time is within an acceptable range": true
+					"Validate the response schema": true
+				}
+			]
+		},
+		{
+			"id": "d3a22832-0e51-4a86-9dc4-bc0552dbc4b3",
+			"name": "/versiones/<id>",
+			"url": "http://localhost:5001/versiones/673086ef412f6b6bdfa34f8c",
+			"time": 49,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				49
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "692ce11e-9329-4587-8ef5-791852e8672e",
+			"name": "/versiones/<id>",
+			"url": "http://localhost:5001/versiones/673086ef412f6b6bdfa34f8c",
+			"time": 127,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				127
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c6da134a-cc36-4bd6-b489-a2a2c90e5406",
+			"name": "/versiones (by idEntrada)",
+			"url": "http://localhost:5001/versiones/",
+			"time": 50,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				50
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "fe0440b1-dc9e-441f-975f-3773392c322a",
+			"name": "/comentarios/<id>",
+			"url": "http://localhost:5002/comentarios/673086ef570e8f176c3fe5dd",
+			"time": 95,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				95
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "4c5e06c2-8a01-423b-a575-8b08e05e70bf",
+			"name": "/comentarios (by idEntrada)",
+			"url": "http://localhost:5002/comentarios",
+			"time": 52,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				52
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9f78d399-cf33-4d34-8351-0d8551e36400",
+			"name": "/entradas/<id>",
+			"url": "http://localhost:5001/entradas/673086ed412f6b6bdfa34f8b",
+			"time": 99,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				99
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9c517e56-42c8-41f7-9d15-766805897337",
+			"name": "/entradas (by idWiki)",
+			"url": "http://localhost:5001/entradas",
+			"time": 67,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c33d923b-1a6a-4906-a999-bd8c5c8b586e",
+			"name": "/wikis/<id>",
+			"url": "http://localhost:5000/wikis/673086ed37e98ad8c1c2b3ef",
+			"time": 160,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
 				}
 			]
 		}
 	],
 	"count": 1,
-	"totalTime": 1016,
+	"totalTime": 2159,
 	"collection": {
 		"requests": [
 			{
@@ -643,6 +1009,62 @@
 			{
 				"id": "b5cf3238-31b6-4665-b103-630d489b08c5",
 				"method": "GET"
+			},
+			{
+				"id": "a3639a43-1405-4b1f-8a7c-e652902e8fbf",
+				"method": "POST"
+			},
+			{
+				"id": "a9b0e220-ed11-48c3-b883-f073e1784022",
+				"method": "GET"
+			},
+			{
+				"id": "561f4f1c-ae4d-40f2-90d7-296d60b51e40",
+				"method": "GET"
+			},
+			{
+				"id": "6b43b478-7af9-4b53-ae98-eb78e31a3ecf",
+				"method": "PUT"
+			},
+			{
+				"id": "d13497c0-ec37-451e-9bfd-73a431d145b1",
+				"method": "GET"
+			},
+			{
+				"id": "d9157d13-2a2c-4a99-bc4d-639a07208091",
+				"method": "POST"
+			},
+			{
+				"id": "c1125b51-e3c2-4d24-a35d-79e76574749f",
+				"method": "GET"
+			},
+			{
+				"id": "01c4c254-a1bf-4e75-aace-13fc47fd45fe",
+				"method": "GET"
+			},
+			{
+				"id": "25827e27-64da-44e5-b5b2-b80881756a4c",
+				"method": "GET"
+			},
+			{
+				"id": "d3a22832-0e51-4a86-9dc4-bc0552dbc4b3",
+				"method": "PUT"
+			},
+			{
+				"id": "692ce11e-9329-4587-8ef5-791852e8672e",
+				"method": "DELETE"
+			},
+			{
+				"id": "c6da134a-cc36-4bd6-b489-a2a2c90e5406",
+				"method": "DELETE"
+			},
+			{
+				"id": "fe0440b1-dc9e-441f-975f-3773392c322a",
+				"method": "DELETE"
+			},
+			{
+				"id": "4c5e06c2-8a01-423b-a575-8b08e05e70bf",
+				"method": "DELETE"
 			},
 			{
 				"id": "9f78d399-cf33-4d34-8351-0d8551e36400",
